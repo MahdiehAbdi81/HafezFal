@@ -4,40 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B1A2D"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="فال حافظ"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/biography"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:fontFamily="@font/irannastaliq"
+        android:paddingHorizontal="70dp"
+        android:paddingVertical="0dp"
         android:text="بیوگرافی شاعران"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fal" />
+        app:layout_constraintTop_toBottomOf="@+id/fal"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
 
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/fal"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/irannastaliq"
+        android:paddingHorizontal="70dp"
+        android:text="فال حافظ"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/biography"
+        app:layout_constraintEnd_toEndOf="@+id/biography"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/biography"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="فال حافظ"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="548dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
