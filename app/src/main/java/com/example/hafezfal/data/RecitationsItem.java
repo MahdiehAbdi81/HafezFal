@@ -1,4 +1,4 @@
-package com.example.hafezfal.d;
+package com.example.hafezfal.data;
 
 import java.util.List;
 import com.squareup.moshi.Json;

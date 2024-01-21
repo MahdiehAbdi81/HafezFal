@@ -1,8 +1,7 @@
 package com.example.hafezfal;
 
-import com.example.hafezfal.d.FalResponse;
-import com.example.hafezfal.d.bio.PoetsResponse;
-import com.example.hafezfal.d.bio.PoetsResponseItem;
+import com.example.hafezfal.data.FalResponse;
+import com.example.hafezfal.data.PoetsResponseItem;
 
 import java.util.List;
 
