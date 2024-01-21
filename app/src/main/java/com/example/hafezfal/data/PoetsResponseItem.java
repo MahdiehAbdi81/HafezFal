@@ -1,4 +1,4 @@
-package com.example.hafezfal.d.bio;
+package com.example.hafezfal.data;
 
 import com.squareup.moshi.Json;
 
